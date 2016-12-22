@@ -88,7 +88,7 @@ void onSerial(String txt){
 
     sendSerial( String("rep:")+sensorValue+":"+cmd[2] ) ;
   } else if( cmd[0].equals("init") ){
-    sendSerial( String("oninit:")+UNIQUE_ID + "/in:0,1,2/out:0,1,2/mode:gpio/key:"+cmd[1]) ;
+    sendSerial( String("oninit:")+UNIQUE_ID + "/in:0,1,2/out:0,1,2/mode:gpio") ;
   }
 }
 
